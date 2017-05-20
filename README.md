@@ -1,4 +1,4 @@
-**NBA Api documentation: ** https://github.com/seemethere/nba_py/wiki/stats.nba.com-Endpoint-Documentation
+**NBA Api documentation:** https://github.com/seemethere/nba_py/wiki/stats.nba.com-Endpoint-Documentation
 
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
