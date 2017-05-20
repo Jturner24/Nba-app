@@ -42,69 +42,109 @@ export class ListPage {
         id: "1610612751"
       },
       {
-        name: '',
-        id: ""
+        name: 'Charlotte Hornets',
+        id: "1610612766"
       },
       {
-        name: '',
-        id: ""
+        name: 'Chicago Bulls',
+        id: "1610612741"
       },
       {
-        name: '',
-        id: ""
+        name: 'Cleveland Cavaliers',
+        id: "1610612739"
       },
       {
-        name: '',
-        id: ""
+        name: 'Dallas Mavericks',
+        id: "1610612742"
       },
       {
-        name: '',
-        id: ""
+        name: 'Denver Nuggets',
+        id: "1610612743"
       },
       {
-        name: '',
-        id: ""
+        name: 'Detroit Pistons',
+        id: "1610612765"
       },
       {
 
-        name: '',
-        id: ""
+        name: 'Golden State Warriors',
+        id: "1610612744"
       },
       {
-        name: '',
-        id: ""
+        name: 'Houston Rockets',
+        id: "1610612745"
       },
       {
-        name: '',
-        id: ""
+        name: 'Indiana Pacers',
+        id: "1610612754"
       },
       {
-        name: '',
-        id: ""
+        name: 'Los Angeles Clippers',
+        id: "1610612746"
       },
       {
-        name: '',
-        id: ""
+        name: 'Los Angeles Lakers',
+        id: "1610612747"
       },
       {
-        name: '',
-        id: ""
+        name: 'Memphis Grizzlies',
+        id: "1610612763"
       },
       {
-        name: '',
-        id: ""
+        name: 'Miami Heat',
+        id: "1610612748"
       },
       {
-        name: '',
-        id: ""
+        name: 'Milwaukee Bucks',
+        id: "1610612749"
       },
       {
-        name: '',
-        id: ""
+        name: 'New Orleans Pelicans',
+        id: "1610612740"
       },
       {
-        name: '',
-        id: ""
+        name: 'New York Knicks',
+        id: "1610612752"
+      },
+      {
+        name: 'Oklahoma City Thunder',
+        id: "1610612760"
+      },
+      {
+        name: 'Orlando Magic',
+        id: "1610612753"
+      },
+      {
+        name: 'Philadelphia 76ers',
+        id: "1610612755"
+      },
+      {
+        name: 'Phoenix Suns',
+        id: "1610612756"
+      },
+      {
+        name: 'Portland Trail Blazers',
+        id: "1610612757"
+      },
+      {
+        name: 'Sacramento Kings',
+        id: "1610612758"
+      },
+      {
+        name: 'San Antonio Spurs',
+        id: "1610612759"
+      },
+      {
+        name: 'Toronto Raptors',
+        id: "1610612761"
+      },
+      {
+        name: 'Utah Jazz',
+        id: "1610612762"
+      },
+      {
+        name: 'Washington Wizards',
+        id: "1610612764"
       },
     ]
   }
