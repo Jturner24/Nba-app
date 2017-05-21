@@ -13,4 +13,6 @@ import { TeamPage } from './team';
     TeamPage
   ]
 })
-export class TeamPageModule {}
+export class TeamPageModule { }
+//we imported the teampage so that the system wont break because they has to that
+//we didnt import a team page 

@@ -7,12 +7,57 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Stats</ion-title>
+    <ion-title>{{team.name}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+<!-- this the player StatsBar-->
+<ion-content padding>
+  {{team.name}} {{team.id}}
+  <!--anganlar built in fuction ngif means dont show if we hsve or it true-->
+  <div *ngIf="teamstats">
+    <!--we did this here cause ^^ the api takes a while to respond-->
+    <img src="http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/{{teamstats.resultSets[0].rowSet[0][4]}}.svg">
+    <!--replace the url abb with the team stats and results sets to replace with
+    our abb so that it will kinda copy and paste them  -->
+    <div>
+      {{teamstats.resultSets[0].headers[5]}}: {{teamstats.resultSets[0].rowSet[0][5]}}
+    </div>
+    <div>
+      {{teamstats.resultSets[0].headers[6]}}: {{teamstats.resultSets[0].rowSet[0][6]}}
+    </div>
+    <div>
+      {{teamstats.resultSets[0].headers[8]}}: {{teamstats.resultSets[0].rowSet[0][8]}}
+    </div>
+    <div>
+      {{teamstats.resultSets[0].headers[9]}}: {{teamstats.resultSets[0].rowSet[0][9]}}
+    </div>
+    <div>
+      {{teamstats.resultSets[0].headers[10]}}: {{teamstats.resultSets[0].rowSet[0][10]}}
+    </div>
+    <div>
+      {{teamstats.resultSets[0].headers[11]}}: {{teamstats.resultSets[0].rowSet[0][11]}}
+    </div>
+    <div>
+      {{teamstats.resultSets[0].headers[12]}}: {{teamstats.resultSets[0].rowSet[0][12]}}
+    </div>
+    <div>
+      {{teamstats.resultSets[0].headers[13]}}: {{teamstats.resultSets[0].rowSet[0][13]}}
+    </div>
+    <div>
+      {{teamstats.resultSets[0].headers[14]}}:{{teamstats.resultSets[0].rowSet[0][14]}}
+    </div>
+    <div>
+      {{teamstats.resultSets[0].headers[15]}}: {{teamstats.resultSets[0].rowSet[0][15]}}
+    </div>
 
-<ion-content padding>google
+
+
+
+  </div>
+
+
 
 </ion-content>
+ontent>

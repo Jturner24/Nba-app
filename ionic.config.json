@@ -1,5 +1,9 @@
 {
   "name": "NbaApp",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "proxies": [{
+    "path": "/api/teaminfocommon",
+    "proxyUrl":"http://stats.nba.com/stats/teaminfocommon"
+    }]
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {TeamPage } from '../team/team';
-
+//we had imprt team page cause list page didnt know what it was
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html'
@@ -144,11 +144,15 @@ export class ListPage {
     ]
   }
 
+  //nav crtl lets go to page by page by clikcing
+  //push lets you go to a page and we can pass an object to that page
+  //pop let you go back a page 
   teamTapped(event, team) {
     console.log("tapped to team ")
     // That's right, we're pushing to ourselves!
     this.navCtrl.push(TeamPage, {
       team: team
+
 
     });
   }
