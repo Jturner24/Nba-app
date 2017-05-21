@@ -1,5 +1,13 @@
 # Nba App Readme
 
+### Ionic Serve Api Proxying
+
+**Best solution:**
+Simply install this chrome plugin for `ionic serve`: https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi/related?hl=en
+
+We need to proxy request in ionic.config, but when you build the app for android, you have to undo it.
+http://blog.ionic.io/handling-cors-issues-in-ionic/
+
 ### Nba Api Documentation
 https://github.com/seemethere/nba_py/wiki/stats.nba.com-Endpoint-Documentation
 
@@ -35,11 +43,6 @@ Get Player headshot:
 https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201156.png
 
 Replace 201156 with the PLAYER_ID
-
-### Ionic Serve Api Proxying
-
-We need to proxy request in ionic.config, but when you build the app for android, you have to undo it.
-http://blog.ionic.io/handling-cors-issues-in-ionic/
 
 
 ---------------------------------------------------------------------------------------
