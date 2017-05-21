@@ -56,6 +56,20 @@
 
 
   </div>
+  <div *ngIf="teamroster">
+    <ion-list>
+      <!--use ngfor to loop through our api response to show our players  -->
+      <button ion-item *ngFor="let player of teamroster.resultSets[0].rowSet" (click)="playerTapped($event, player)">
+      <!-- dont have icons yet, so I am gonna do this later
+      <ion-icon [name]="item.icon" item-left></ion-icon> -->
+      {{player[4]}}-{{player[3]}}
+      <!-- ngfor is angular built function that loops in ts we have array called
+      teams and we do this for each team  -->
+      <!--click calls a funtion whenever a thing is click-->
+    </button>
+
+    </ion-list>
+  </div>
 
 
 

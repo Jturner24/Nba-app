@@ -5,5 +5,13 @@
   "proxies": [{
     "path": "/api/teaminfocommon",
     "proxyUrl":"http://stats.nba.com/stats/teaminfocommon"
-    }]
+  },
+  {
+    "path": "/api/commonteamroster",
+    "proxyUrl":"http://stats.nba.com/stats/commonteamroster"
+
+  },
+    {"path":"/api/commonplayerinfo",
+    "proxyUrl":"http://stats.nba.com/stats/commonplayerinfo"
+  }]
 }

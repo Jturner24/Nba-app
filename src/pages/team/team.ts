@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http, RequestOptions, Headers } from '@angular/http';
 import { Observable } from "rxjs/Obsevable";
 import 'rxjs/Rx';
+import { PlayersPage } from '../players/players';
 
 /**
  * Generated class for the TeamPage page.
@@ -18,6 +19,7 @@ import 'rxjs/Rx';
 export class TeamPage {
   team: any;
   teamstats: any;
+  teamroster: any;
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
     this.team = navParams.get("team")
 
@@ -36,11 +38,26 @@ export class TeamPage {
       this.teamstats = response;
 
     })
+    let urlteamroster = "/api/commonteamroster/?Season=2016-17&TeamID=" + this.team.id + "&LeagueID=00"
 
+    http.get(urlteamroster).map(response => response.json()).subscribe((response) => {
+
+      console.log('roster', response)
+      this.teamroster = response;
+    })
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamPage');
   }
 
+  playerTapped(event, player) {
+    console.log("tapped to player ")
+    // That's right, we're pushing to ourselves!
+    this.navCtrl.push(PlayersPage, {
+      player: player
+
+
+    });
+  }
 }

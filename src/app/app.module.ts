@@ -3,7 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 // we imorted all the nessceryay imports so that the thing wont break
 //we import cause of the new page we added didnt knoe that we added a new
-//so we imprted new pages 
+//so we imprted new pages
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
@@ -11,13 +11,15 @@ import {TeamPage } from '../pages/team/team';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpModule } from '@angular/http';
+import { PlayersPage } from '../pages/players/players';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    TeamPage
+    TeamPage,
+    PlayersPage,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { HttpModule } from '@angular/http';
     MyApp,
     HomePage,
     ListPage,
-    TeamPage
+    TeamPage,
+    PlayersPage,
   ],
   providers: [
     StatusBar,
