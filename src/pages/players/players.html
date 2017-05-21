@@ -14,7 +14,53 @@
 
 
 <ion-content padding><img src="https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/{{player[12]}}.png">
-  <div>
-    {{player[4]}}-{{player[3]}}</div>
+  <div *ngIf="playerstats">
+
+
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[0].headers[6])}}: {{moment(playerstats.resultSets[0].rowSet[0][6]).format("MMM Do YY")}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[0].headers[7])}}: {{playerstats.resultSets[0].rowSet[0][7]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[0].headers[8])}}: {{playerstats.resultSets[0].rowSet[0][8]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[0].headers[9])}}: {{playerstats.resultSets[0].rowSet[0][9]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[0].headers[10])}}: {{playerstats.resultSets[0].rowSet[0][10]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[0].headers[11])}}: {{playerstats.resultSets[0].rowSet[0][11]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[0].headers[12])}}: {{playerstats.resultSets[0].rowSet[0][12]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[0].headers[13])}}Num: {{playerstats.resultSets[0].rowSet[0][13]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[0].headers[14])}}: {{playerstats.resultSets[0].rowSet[0][14]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[1].headers[2])}}: {{playerstats.resultSets[1].rowSet[0][2]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[1].headers[3])}}: {{playerstats.resultSets[1].rowSet[0][3]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[1].headers[4])}}: {{playerstats.resultSets[1].rowSet[0][4]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[1].headers[5])}}: {{playerstats.resultSets[1].rowSet[0][5]}}
+    </div>
+    <div>
+      {{capitalizeFirstLetter(playerstats.resultSets[1].headers[6])}}: {{playerstats.resultSets[1].rowSet[0][6]}}
+    </div>
+
+  </div>
+
 
 </ion-content>

@@ -20,6 +20,7 @@ export class TeamPage {
   team: any;
   teamstats: any;
   teamroster: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
     this.team = navParams.get("team")
 
@@ -59,5 +60,10 @@ export class TeamPage {
 
 
     });
+  }
+  hoe(string) {
+
+
+    return string.replace(/\w\S*/g, function(txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase().replace("_", " "); });
   }
 }

@@ -14,7 +14,6 @@
 
 <!-- this the player StatsBar-->
 <ion-content padding>
-  {{team.name}} {{team.id}}
   <!--anganlar built in fuction ngif means dont show if we hsve or it true-->
   <div *ngIf="teamstats">
     <!--we did this here cause ^^ the api takes a while to respond-->
@@ -22,31 +21,31 @@
     <!--replace the url abb with the team stats and results sets to replace with
     our abb so that it will kinda copy and paste them  -->
     <div>
-      {{teamstats.resultSets[0].headers[5]}}: {{teamstats.resultSets[0].rowSet[0][5]}}
+      {{hoe(teamstats.resultSets[0].headers[5])}}: {{teamstats.resultSets[0].rowSet[0][5]}}
     </div>
     <div>
-      {{teamstats.resultSets[0].headers[6]}}: {{teamstats.resultSets[0].rowSet[0][6]}}
+      {{hoe(teamstats.resultSets[0].headers[6])}}: {{teamstats.resultSets[0].rowSet[0][6]}}
     </div>
     <div>
-      {{teamstats.resultSets[0].headers[8]}}: {{teamstats.resultSets[0].rowSet[0][8]}}
+      {{hoe(teamstats.resultSets[0].headers[8])}}: {{teamstats.resultSets[0].rowSet[0][8]}}
     </div>
     <div>
-      {{teamstats.resultSets[0].headers[9]}}: {{teamstats.resultSets[0].rowSet[0][9]}}
+      {{hoe(teamstats.resultSets[0].headers[9])}}: {{teamstats.resultSets[0].rowSet[0][9]}}
     </div>
     <div>
-      {{teamstats.resultSets[0].headers[10]}}: {{teamstats.resultSets[0].rowSet[0][10]}}
+      {{hoe(teamstats.resultSets[0].headers[10])}}: {{teamstats.resultSets[0].rowSet[0][10]}}
     </div>
     <div>
-      {{teamstats.resultSets[0].headers[11]}}: {{teamstats.resultSets[0].rowSet[0][11]}}
+      {{hoe(teamstats.resultSets[0].headers[11])}}: {{teamstats.resultSets[0].rowSet[0][11]}}
     </div>
     <div>
-      {{teamstats.resultSets[0].headers[12]}}: {{teamstats.resultSets[0].rowSet[0][12]}}
+      {{hoe(teamstats.resultSets[0].headers[12])}}: {{teamstats.resultSets[0].rowSet[0][12]}}
     </div>
     <div>
-      {{teamstats.resultSets[0].headers[13]}}: {{teamstats.resultSets[0].rowSet[0][13]}}
+      {{hoe(teamstats.resultSets[0].headers[13])}}: {{teamstats.resultSets[0].rowSet[0][13]}}
     </div>
     <div>
-      {{teamstats.resultSets[0].headers[14]}}:{{teamstats.resultSets[0].rowSet[0][14]}}
+      {{hoe(teamstats.resultSets[0].headers[14])}}:{{teamstats.resultSets[0].rowSet[0][14]}}
     </div>
     <div>
       {{teamstats.resultSets[0].headers[15]}}: {{teamstats.resultSets[0].rowSet[0][15]}}
