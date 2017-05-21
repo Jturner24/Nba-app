@@ -62,8 +62,7 @@ export class TeamPage {
     });
   }
   hoe(string) {
-
-
-    return string.replace(/\w\S*/g, function(txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase().replace("_", " "); });
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase().replace("_", " ").replace("rank", "Rank").replace("division", "Division").replace("conference", "Conference").replace("year", "Year");
   }
+
 }
