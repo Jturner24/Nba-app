@@ -20,6 +20,7 @@ export class TeamPage {
   team: any;
   teamstats: any;
   teamroster: any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
     this.team = navParams.get("team")
 
@@ -60,4 +61,8 @@ export class TeamPage {
 
     });
   }
+  hoe(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase().replace("_", " ").replace("rank", "Rank").replace("division", "Division").replace("conference", "Conference").replace("year", "Year");
+  }
+
 }
