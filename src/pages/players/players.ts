@@ -25,7 +25,7 @@ export class PlayersPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
     this.moment = moment
     this.player = navParams.get("player")
-    let urlteamroster = "/api/commonplayerinfo/?PlayerID=" + this.player[12]
+    let urlteamroster = "http://stats.nba.com/stats/commonplayerinfo/?PlayerID=" + this.player[12]
 
 
     http.get(urlteamroster).map(response => response.json()).subscribe((response) => {

@@ -1,4 +1,53 @@
-**NBA Api documentation:** https://github.com/seemethere/nba_py/wiki/stats.nba.com-Endpoint-Documentation
+# Nba App Readme
+
+### Ionic Serve Api Proxying
+
+**Best solution:**
+Simply install this chrome plugin for `ionic serve`: https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi/related?hl=en
+
+We need to proxy request in ionic.config, but when you build the app for android, you have to undo it.
+http://blog.ionic.io/handling-cors-issues-in-ionic/
+
+### Nba Api Documentation
+https://github.com/seemethere/nba_py/wiki/stats.nba.com-Endpoint-Documentation
+
+May need to add Referer Headers, eg:
+Referer: http://stats.nba.com/scores/
+
+**Best Endpoints:**
+https://github.com/bttmly/nba/blob/master/doc/stats.md
+
+**Api Docs:**
+https://github.com/seemethere/nba_py/wiki/stats.nba.com-Endpoint-Documentation
+
+**Get Team Dashboard:**
+http://stats.nba.com/stats/teaminfocommon/?Season=2016-17&TeamID=1610612762&LeagueID=00&SeasonType=Regular%20Season
+
+**Get Team Roster:**
+http://stats.nba.com/stats/commonteamroster/?Season=2016-17&TeamID=1610612747&LeagueID=00
+
+**Get Player Info:**
+http://stats.nba.com/stats/commonplayerinfo/?PlayerID=201156
+
+API WILL RETURN BLANK DATA IF QUERY IS BAD
+
+### Nba Images
+
+Get Team Logos:
+http://i.cdn.turner.com/nba/nba/assets/logos/teams/primary/web/UTA.svg
+
+Replace UTA with the teams Abbrevation.
+
+
+Get Player headshot:
+https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201156.png
+
+Replace 201156 with the PLAYER_ID
+
+
+---------------------------------------------------------------------------------------
+
+# Default Ionic Readme
 
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
@@ -25,5 +74,3 @@ $ ionic cordova run ios
 ```
 
 Substitute ios for android if not on a Mac.
-
-# Nba-app

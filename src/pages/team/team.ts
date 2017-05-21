@@ -28,7 +28,7 @@ export class TeamPage {
     // let options = new RequestOptions({ headers: headers })
     //on teh url line we are using the nba api, this is a REST endpoint
     //were are using the path team infocommon , with the quary params season, and passed onto the url
-    let url = "/api/teaminfocommon/?Season=2016-17&TeamID=" + this.team.id + "&LeagueID=00&SeasonType=Regular%20Season"
+    let url = "http://stats.nba.com/stats/teaminfocommon/?Season=2016-17&TeamID=" + this.team.id + "&LeagueID=00&SeasonType=Regular%20Season"
     //we had the http go get the stats and info and have responde to us so that it have an object
     http.get(url).map(response => response.json()).subscribe((response) => {
       //after .subscribe the had return out response we can set it to teamstats log
@@ -39,7 +39,7 @@ export class TeamPage {
       this.teamstats = response;
 
     })
-    let urlteamroster = "/api/commonteamroster/?Season=2016-17&TeamID=" + this.team.id + "&LeagueID=00"
+    let urlteamroster = "http://stats.nba.com/stats/commonteamroster/?Season=2016-17&TeamID=" + this.team.id + "&LeagueID=00"
 
     http.get(urlteamroster).map(response => response.json()).subscribe((response) => {
 
